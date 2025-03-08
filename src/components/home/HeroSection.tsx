@@ -41,7 +41,7 @@ const HeroSection = () => {
           <span className="text-red-500"> Week</span>
         </h1>
 
-        <div className="hidden md:flex items-center space-x-8 text-lg">
+        <div className="hidden xl:flex items-center space-x-8 text-lg">
           <NavLink href="/">About</NavLink>
           <NavLink href="/">Shows</NavLink>
           <NavLink href="/">Sponsor</NavLink>
@@ -51,14 +51,14 @@ const HeroSection = () => {
           <NavLink href="/">Contact</NavLink>
         </div>
 
-        <div className="md:flex hidden md:flex-row items-center space-x-4 md:text-lg">
+        <div className="xl:flex hidden md:flex-row items-center space-x-4 md:text-lg">
           <Link href="/login" className="text-white hover:text-gray-400 transition">
             Login
           </Link>
           <TransparentButton href="/" text="Register" />
         </div>
 
-        <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-white text-2xl">
+        <button onClick={() => setMenuOpen(!menuOpen)} className="xl:hidden text-white text-2xl">
           ☰
         </button>
       </nav>
