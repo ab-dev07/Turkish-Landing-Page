@@ -1,0 +1,25 @@
+
+.scrollingLines {
+    animation: move 40s linear infinite;
+  }
+    .scrollingLinesReverse {
+        animation: moveReverse 40s linear infinite;
+    }
+  @keyframes move {
+    0% {
+      transform: translateX(40%);
+    }
+    100% {
+      transform: translateX(-15%);
+    }
+    
+  }
+  @keyframes moveReverse {
+    0% {
+      transform: translateX(-15%);
+    }
+    100% {
+      transform: translateX(40%);
+    }
+    
+  }
