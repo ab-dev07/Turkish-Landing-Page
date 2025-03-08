@@ -1,4 +1,4 @@
-import { Email, Message, Phone, User } from '@/icons'
+import { Email, Phone, User } from '@/icons'
 import { CircleArrow, RadioButton } from '@/components/shared'
 import Organizers from './Organizers'
 
@@ -27,7 +27,7 @@ export default function GetNotifiedForm() {
                         </div>
                     </div>
                     <div className='mt-8 cursor-pointer'>
-                        <p className='inline'><RadioButton checked /> I agreed to receive news, feature updates, discounts, and offers from 90EVENTS via SMS text messages. Standard messaging rates apply from your wireless carrier and have read the 90Events SMS Terms and Conditions.</p>
+                        <p className='inline'><RadioButton  /> I agreed to receive news, feature updates, discounts, and offers from 90EVENTS via SMS text messages. Standard messaging rates apply from your wireless carrier and have read the 90Events SMS Terms and Conditions.</p>
                     </div>
 
                     <button type='submit' className='flex items-center gap-5 border border-[#ED1E24] rounded-[215px] p-2 pl-7 text-[20px] mx-auto mt-10 font-bold cursor-pointer group hover:bg-[#ED1E24] transition-all'>
