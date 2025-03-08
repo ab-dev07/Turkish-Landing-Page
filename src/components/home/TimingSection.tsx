@@ -61,7 +61,7 @@ const TimingSection: React.FC<TimingSectionProps> = ({
         </div> </div>
         
         <div className="md:w-[50%] flex flex-col ">
-      <div className="flex  flex-wrap  gap-2 ">
+      <div className="flex justify-center items-center flex-wrap  gap-2 ">
         {Array.from({ length: 6 }, (_, i) => i + 1).map((day) => (
           <button
             key={day}

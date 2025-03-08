@@ -73,7 +73,7 @@ export default function EventCardsSection() {
 
         
 
-        <div className="mt-12 flex justify-center">
+        <div className="mt-21 mb-7 flex justify-center">
           <TransparentButton href='/' text='Turkish Art Event in Costa Rica' textColor="#222222"/>
         </div>
       </main>

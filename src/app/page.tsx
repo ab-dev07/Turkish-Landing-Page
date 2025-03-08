@@ -6,7 +6,7 @@ import Speakers from "@/components/home/Speakers";
 export default function Home() {
   return (
     <>
-     {/* <div className="overflow-x-hidden"> */}
+     <div className="overflow-x-hidden">
                 <HeroSection/>
                
 <TwoLines/>
@@ -18,7 +18,7 @@ export default function Home() {
       <Speakers />
       <GetNotifiedForm />
 
-   {/* </div> */}
+   </div>
     </>
   );
 }
