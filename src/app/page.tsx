@@ -1,9 +1,13 @@
-import Image from "next/image";
+import { ExhibitForm, GetNotifiedForm, Organizers, Sponsor } from "@/components/home";
+import Speakers from "@/components/home/Speakers";
 
 export default function Home() {
   return (
-    <div >
-      home
-    </div>
+    <>
+      <Sponsor />
+      <ExhibitForm />
+      <Speakers />
+      <GetNotifiedForm />
+    </>
   );
 }
