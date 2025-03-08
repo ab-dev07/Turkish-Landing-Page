@@ -41,7 +41,7 @@ const MissionSection = () => {
               height={565}
               className=" object-cover"
             />
-            <div className="absolute -rotate-3 font-bold bottom-20 left-[-18px] bg-red-600 rounded-full md:w-39 md:h-39 w-24 h-24  flex flex-col items-center justify-center text-center text-3xl text-transparent" style={{ WebkitTextStroke: '1.5px #FFFFFF' }}>
+            <div className="absolute -rotate-3 font-bold bottom-20 left-[-18px] bg-red-600 rounded-full md:w-39 md:h-39 w-24 h-24  flex flex-col items-center justify-center text-center md:text-3xl text-xl text-transparent" style={{ WebkitTextStroke: '1.5px #FFFFFF' }}>
            <div className='flex flex-col items-center'>
           <span >TURK</span>
               <span >ISH</span>
