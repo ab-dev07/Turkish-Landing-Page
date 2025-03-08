@@ -1,0 +1,16 @@
+import Link from 'next/link'
+import React from 'react'
+import TopCornerArrow from '../icons/TopCornerArrow';
+
+// Define the prop with a default value for href
+export default function TransparentButton({ href = "/",text ,textColor= "white"}: { href?: string,text:string,textColor?:string }) {
+  return (
+    <Link 
+      href={href} 
+      className={`group flex items-center justify-between gap-4 border-2 border-red-600 hover:text-white hover:bg-red-700 text-${textColor} pl-6 pr-1 py-1 rounded-full transition`}
+    >
+      {text}
+     <TopCornerArrow/>
+    </Link>
+  );
+}
