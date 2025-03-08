@@ -1,7 +1,7 @@
 import React from 'react'
-import FillStar from '../icons/FillStar'
-import Star from '../icons/Star'
 import  styles  from './ScrollinLines.module.css'
+import Star from '@/icons/Star'
+import FillStar from '@/icons/FillStar'
 export default function ScrollingLines({direction="forward",backgroundColor,rotate="no"}:{direction?:string,backgroundColor:string,rotate?:string}) {
   return (
     <>

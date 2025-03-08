@@ -47,6 +47,7 @@ module.exports = {
           500: "#ff3a3a",
           600: "#e03131",
         },
+       
         borderRadius: {
           lg: "var(--radius)",
           md: "calc(var(--radius) - 2px)",
