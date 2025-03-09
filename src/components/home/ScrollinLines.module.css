@@ -1,25 +1,25 @@
 
 .scrollingLines {
-    animation: move 40s linear infinite;
+    animation: move 30s linear infinite;
   }
     .scrollingLinesReverse {
-        animation: moveReverse 40s linear infinite;
+        animation: moveReverse 30s linear infinite;
     }
   @keyframes move {
     0% {
-      transform: translateX(40%);
+      transform: translateX(20%);
     }
     100% {
-      transform: translateX(-15%);
+      transform: translateX(-20%);
     }
     
   }
   @keyframes moveReverse {
     0% {
-      transform: translateX(-15%);
+      transform: translateX(-20%);
     }
     100% {
-      transform: translateX(40%);
+      transform: translateX(20%);
     }
     
   }

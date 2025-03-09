@@ -61,7 +61,7 @@ export default function EventCardsSection() {
 
   return (
     <div className="relative min-h-screen bg-white py-10 px-4 sm:px-6 lg:px-8">
-      {/* Background Image */}
+      
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <Image 
           alt="Background lines"

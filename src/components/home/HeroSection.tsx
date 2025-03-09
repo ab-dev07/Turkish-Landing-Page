@@ -21,7 +21,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="relative w-full h-[100vh] overflow-hidden">
+    <div className="relative w-full h-[97.5vh] overflow-hidden">
       <div
         className="absolute inset-0 z-0 flex transition-transform duration-1000 ease-in-out"
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}

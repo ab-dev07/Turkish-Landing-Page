@@ -13,17 +13,11 @@ export default function AnimationText({ heading, paragraph }: AnimationTextProps
 
   useEffect(() => {
     if (!headingRef.current) return;
-
-    // Function to check if element is in the animation range
     const checkPosition = () => {
       if (headingRef.current) {
         const rect = headingRef.current.getBoundingClientRect();
         const viewportHeight = window.innerHeight;
-        
-        // Calculate the top position as percentage of viewport
         const topPercentage = (rect.top / viewportHeight) * 100;
-        
-        // Animation is active when top is between 50% and 80% of viewport
         if (topPercentage < 70 && topPercentage > 40) {
           setInView(true);
         } else {
@@ -31,17 +25,10 @@ export default function AnimationText({ heading, paragraph }: AnimationTextProps
         }
       }
     };
-
-    // Initial check
     checkPosition();
-
-    // Set up scroll listener
     window.addEventListener('scroll', checkPosition);
-
-    // We still use IntersectionObserver for efficiency
     const observer = new IntersectionObserver(
       (entries) => {
-        // When element enters or leaves viewport, check position
         if (entries[0].isIntersecting) {
           checkPosition();
         } else {
@@ -65,7 +52,7 @@ export default function AnimationText({ heading, paragraph }: AnimationTextProps
     <>
       <h2
         ref={headingRef}
-        className={`text-5xl md:text-7xl text-[#222222] font-bold mb-6 ${styles.animationText} ${inView ? styles.animate : ""} lg:block`}
+        className={`text-5xl md:text-8xl text-[#222222] font-bold mb-6 ${styles.animationText} ${inView ? styles.animate : ""} lg:block`}
       >
         {heading}
       </h2>

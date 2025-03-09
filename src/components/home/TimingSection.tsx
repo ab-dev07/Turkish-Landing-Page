@@ -68,7 +68,7 @@ const TimingSection: React.FC<TimingSectionProps> = ({
       </div>
       <div className="mt-8 border-t border-gray-200">
         {events?.map((event, index) => (
-          <div key={index} className="py-6 border-b border-gray-200">
+          <div key={index} className="py-6 border-b border-gray-200 text-[#28303F]">
             <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-1/4 mb-4 md:mb-0">
                 <div className="font-bold text-xl">{event.startTime}</div>
@@ -77,7 +77,7 @@ const TimingSection: React.FC<TimingSectionProps> = ({
               <div className="w-full md:w-3/4">
                 <div className="text-red-500 text-sm mb-1">{event.category}</div>
                 <h3 className="text-xl font-semibold mb-2">{event.title}</h3>
-                <p className="text-gray-600 text-sm">{event.description}</p>
+                <p className=" text-sm text-[#838490]">{event.description}</p>
               </div>
             </div>
           </div>

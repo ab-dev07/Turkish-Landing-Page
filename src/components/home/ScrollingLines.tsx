@@ -6,8 +6,8 @@ export default function ScrollingLines({direction="forward",backgroundColor,rota
   return (
     <>
   <div className={` ${direction=="forward"? styles.scrollingLines:styles.scrollingLinesReverse}
-       ${rotate==="down"?" md:rotate-3":"md:-rotate-3"}
-        h-21 w-[5600px] relative overflow-hidden flex gap-3 px-5 items-center font-extrabold text-4xl text-white
+       ${rotate==="down"?" md:rotate-3 xl:rotate-2":"md:-rotate-3 xl:-rotate-3"}
+        h-21 w-[9600px] relative overflow-hidden flex gap-3 px-5 items-center font-extrabold text-4xl text-white
      ${backgroundColor==='red'?'bg-[#ED1E24]  ':'bg-[#222222] '}
      
      `}
@@ -17,6 +17,12 @@ export default function ScrollingLines({direction="forward",backgroundColor,rota
           <Data/>
           <Data/>
           <Data/>
+          <Data/>
+          <Data/>
+          
+          <Data/>
+          <Data/>
+          
           <Data/>
           <Data/>
      </div>
