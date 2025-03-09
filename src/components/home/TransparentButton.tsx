@@ -2,7 +2,6 @@ import Link from 'next/link'
 import React from 'react'
 import { CircleArrow } from '../shared';
 
-// Define the prop with a default value for href
 export default function TransparentButton({ href = "/",text ,textColor= "white"}: { href?: string,text:string,textColor?:string }) {
   return (
     <Link 

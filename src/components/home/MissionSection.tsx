@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
 import React from 'react';
-
+import AnimationText from './AnimationText';
 const MissionSection = () => {
   return (
     <section className="py-16 px-6 md:px-10 lg:px-16 bg-white">
@@ -12,25 +12,9 @@ const MissionSection = () => {
             WHAT IS TURKISH WEEK?
           </div>
           
-          <h2 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
-            MISSION
-          </h2>
-          
-          <p className="text-gray-500 mb-16">
-            from anatolia to istanbul&quot; featuring works by renowned turkish photographers exhibition hall, national theater complex free admission
-          </p>
-          <div className="border-t border-gray-200 mt-8 pt-8">
-          </div>
-          <h2 className="text-5xl md:text-7xl font-bold text-gray-200 mb-6">
-            VISION
-          </h2>
-          
-          <p className="text-gray-500  mb-6">
-            from anatolia to istanbul&quot; featuring works by renowned turkish photographers exhibition hall, national theater complex free admission
-          </p>
-          
-          <div className="border-t border-gray-200 mt-8 pt-8">
-          </div>
+          <AnimationText heading='MISSION' paragraph=' from anatolia to istanbul&quot; featuring works by renowned turkish photographers exhibition hall, national theater complex free admission'/>
+           <AnimationText heading='VISION' paragraph='   from anatolia to istanbul&quot; featuring works by renowned turkish photographers exhibition hall, national theater complex free admission'/>
+       
         </div>
         <div className="relative">
           <div className="rounded-3xl   relative">
@@ -56,3 +40,4 @@ const MissionSection = () => {
 };
 
 export default MissionSection;
+

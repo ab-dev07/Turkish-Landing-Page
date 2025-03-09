@@ -21,7 +21,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="relative w-full h-[105vh] overflow-hidden">
+    <div className="relative w-full h-[100vh] overflow-hidden">
       <div
         className="absolute inset-0 z-0 flex transition-transform duration-1000 ease-in-out"
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}
@@ -117,7 +117,7 @@ const HeroSection = () => {
 
 const NavLink = ({ href, children }: { href: string; children: string | React.ReactNode }) => {
   return (
-    <Link href={href} className="text-white hover:text-gray-400 transition block text-xl">
+    <Link href={href} className="text-white hover:font-semibold transition block text-xl">
       {children}
     </Link>
   );

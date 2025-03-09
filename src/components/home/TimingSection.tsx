@@ -1,6 +1,7 @@
 import React from 'react';
 
 import TransparentButton from './TransparentButton';
+import AnimationText from './AnimationText';
 interface Event {
   startTime: string;
   endTime: string;
@@ -38,24 +39,10 @@ const TimingSection: React.FC<TimingSectionProps> = ({
           </div>
       </div>
       <div className='text-xl mb-2'>{date}</div>
-          
-          <h2 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
-            PANAMA
-          </h2>
-          
-          <p className="text-gray-500 mb-16">
-          from anatolia to istanbul* featuring works by</p>
-          <div className="border-t border-gray-200 mt-8 pt-8">
-          </div>
-          <h2 className="text-5xl  md:text-7xl font-bold text-gray-200 mb-6">
-            COSTA RICA
-          </h2>
-          
-          <p className="text-gray-500 mb-6">
-          from anatolia to istanbul* featuring works by </p>
-          
-          <div className="border-t border-gray-200 mt-8 pt-8">
-          </div>
+          <AnimationText heading='PANAMA' paragraph='from anatolia to istanbul* featuring works by'/>
+          <AnimationText heading=' COSTA RICA' paragraph='from anatolia to istanbul* featuring works by'/>
+        
+         
 <div className='flex items-start gap-2'>
           <TransparentButton text='Download Agenda' textColor='black'/>
         </div> </div>

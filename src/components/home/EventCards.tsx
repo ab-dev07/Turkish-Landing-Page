@@ -31,7 +31,7 @@ const EventCards = ({ event }: { event: EventType }) => {
         </div>
         
       </div>
-      <div className="p-4">
+      <div className="p-4 bg-white">
         <div className="flex items-center gap-1  mb-2">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" >
 <path d="M8.12961 14.4267C11.736 14.4267 14.6596 11.5031 14.6596 7.8967C14.6596 4.29028 11.736 1.3667 8.12961 1.3667C4.52319 1.3667 1.59961 4.29028 1.59961 7.8967C1.59961 11.5031 4.52319 14.4267 8.12961 14.4267Z" stroke="#ED1E24" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
