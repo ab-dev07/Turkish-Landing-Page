@@ -13,16 +13,16 @@ export default function GetNotifiedForm() {
                 </h1>
                 <form className='w-full xl:w-[894px] mx-auto mt-16 text-sm md:text-lg'>
                     <div className='flex justify-between gap-4 flex-col md:flex-row'>
-                        <div className='flex items-center gap-2 bg-[#191818] rounded-2xl border border-[#191818] p-4'>
-                            <User />
+                        <div className='flex items-center gap-2 bg-[#191818] rounded-2xl border border-[#191818] p-4 group focus-within:border-[#ED1E24]'>
+                            <User className='group-focus-within:text-[#ED1E24]'/>
                             <input type="text" placeholder='Name' name='Name' className='focus:outline-0 w-full' />
                         </div>
-                        <div className='flex items-center gap-2 bg-[#191818] rounded-2xl border border-[#191818] p-4'>
-                            <Email />
+                        <div className='flex items-center gap-2 bg-[#191818] rounded-2xl border border-[#191818] p-4 group focus-within:border-[#ED1E24]'>
+                            <Email className='group-focus-within:text-[#ED1E24]'/>
                             <input type="email" placeholder='Email Address' name='email' className='focus:outline-0 w-full' />
                         </div>
-                        <div className='flex items-center gap-2 bg-[#191818] rounded-2xl border border-[#191818] p-4'>
-                            <Phone />
+                        <div className='flex items-center gap-2 bg-[#191818] rounded-2xl border border-[#191818] p-4 group focus-within:border-[#ED1E24]'>
+                            <Phone className='group-focus-within:text-[#ED1E24]'/>
                             <input type="tel" placeholder='Phone number' name='phone number' className='focus:outline-0 w-full' />
                         </div>
                     </div>
