@@ -2,10 +2,9 @@
 @media (min-width: 1024px) {
 .animationText {
     color: #D6D8DA;
-    transition: color 0.40s linear; /* Smooth transition */
+    transition: color 0.40s linear; 
 }
 
-/* Add this class dynamically when in view */
 .animate {
     color: #222222;
 }
