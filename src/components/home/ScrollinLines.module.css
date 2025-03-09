@@ -1,25 +1,43 @@
-
 .scrollingLines {
-    animation: move 30s linear infinite;
-  }
-    .scrollingLinesReverse {
-        animation: moveReverse 30s linear infinite;
-    }
-  @keyframes move {
-    0% {
+  animation: move 30s linear infinite;
+}
+
+.scrollingLinesReverse {
+  animation: moveReverse 30s linear infinite;
+}
+
+@keyframes move {
+  0% {
       transform: translateX(20%);
-    }
-    100% {
-      transform: translateX(-20%);
-    }
-    
   }
-  @keyframes moveReverse {
-    0% {
+  100% {
       transform: translateX(-20%);
-    }
-    100% {
+  }
+}
+
+@keyframes moveReverse {
+  0% {
+      transform: translateX(-20%);
+  }
+  100% {
       transform: translateX(20%);
-    }
-    
   }
+}
+
+/* ✅ Apply different animations based on screen width */
+@media (max-width: 1024px) {
+  .scrollingLines {
+      animation: moveDesktop 2s linear infinite;
+  }
+  .scrollingLinesReverse {
+    animation: moveDesktop 30s linear infinite;
+  }
+  @keyframes moveDesktop {
+      0% {
+          /* transform: translateX(0%); */
+      }
+      100% {
+          /* transform: translateX(-20%); */
+      }
+  }
+}
