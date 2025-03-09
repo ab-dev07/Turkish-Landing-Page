@@ -55,7 +55,7 @@ const HeroSection = () => {
           <Link href="/login" className="text-white hover:text-gray-400 transition">
             Login
           </Link>
-          <TransparentButton href="/" text="Register" />
+          <TransparentButton href="/" text="Register" backgroundColor="#ffffff" />
         </div>
 
         <button onClick={() => setMenuOpen(!menuOpen)} className="xl:hidden text-white text-2xl">
