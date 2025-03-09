@@ -9,18 +9,18 @@ export default function Speakers() {
                 <span className="outline-txt -tracking-wider">Speaker</span>
             </h1>
             <p className="font-geist px-10 md:w-[695px] mx-auto text-center">Our speaker lineup comprises leaders from Stripe and beyond, who’ll share knowledge and advice on the most pressing topics facing companies today. Stay tuned for more announcements.</p>
-            <div className="flex px-4 gap-4 mt-7 overflow-scroll">
+            <div className="flex px-4 gap-4 mt-7 overflow-scroll 2xl:justify-center">
                 <SpeakerCard name="Dylan Field" img="/speakers/dylanField.png" />
                 <SpeakerCard name="Jane Cooper" img="/speakers/janeCooper.png" />
                 <SpeakerCard name="Jacob Jones" img="/speakers/jacobJones.png" />
                 <SpeakerCard name="Albert Flores" img="/speakers/albertFlores.png" />
             </div>
-            <div className="flex gap-2 justify-center mt-7">
+            {/* <div className="flex gap-2 justify-center mt-7">
                 <span className="bg-[#ed1e24] rounded-[88px] w-[34px] cursor-pointer" />
                 <span className="bg-[#eee] rounded-full aspect-square w-[12px] cursor-pointer" />
                 <span className="bg-[#eee] rounded-full aspect-square w-[12px] cursor-pointer" />
                 <span className="bg-[#eee] rounded-full aspect-square w-[12px] cursor-pointer" />
-            </div>
+            </div> */}
         </section>
     )
 }
