@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 * {
   scrollbar-width: none;
 }
@@ -65,4 +64,14 @@ body {
   100% {
     transform: translateX(-50%);
   }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  font-family: var(--font-poppins);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+  transition: background-color 5000s ease-in-out 0s;
 }
