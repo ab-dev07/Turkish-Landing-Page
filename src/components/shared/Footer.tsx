@@ -14,7 +14,6 @@ export default function Footer() {
         <footer className="text-black px-5 md:px-16 lg:px-20 py-16 flex flex-col gap-5 mt-10 mx-auto max-w-[1920px]">
             <div className="flex justify-between flex-col lg:flex-row gap-5">
                 <div className="space-y-5 lg:w-1/3">
-                    {/* <Image src={logo} alt="logo" width={100} height={100} /> */}
                     <h2 className="text-[46px] font-semibold uppercase">
                         <span>
                             Turkish
@@ -92,7 +91,7 @@ export default function Footer() {
                     <span className="w-[1px] h-[44px] bg-[#DCDCDC] hidden md:inline" />
                     <span className="flex gap-2 items-center">
                         Powered by
-                        <Image src="/organizers/90events.png" alt="90events" width={46} height={46} />
+                        <Image src="/organizers/90events.png" alt="90events" width={80} height={80} />
                     </span>
                 </div>
                 <span className="flex gap-5 items-center">

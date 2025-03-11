@@ -3,11 +3,11 @@ import ScrollingLines from './ScrollingLines'
 
 export default function TwoLines() {
   return (
-    <div className="relative  2xl:right-920 xl:right-[720]  lg:top-[-55px] "> 
-<ScrollingLines rotate="down" backgroundColor="red"/>
-<div className='relative xl:top-[-120px]'>
-<ScrollingLines direction="right" rotate="up" backgroundColor="black"/>
-</div>
-</div>
+    <div className="relative  2xl:right-920 xl:right-[720]  lg:top-[-55px]">
+      <ScrollingLines rotate="down" backgroundColor="red" />
+      <div className='relative xl:top-[-120px]'>
+        <ScrollingLines direction="right" rotate="up" backgroundColor="black" />
+      </div>
+    </div>
   )
 }
