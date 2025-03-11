@@ -3,6 +3,7 @@ import React from 'react'
 import { CircleArrow } from '../shared';
 
 export default function TransparentButton({ href = "/",text ,textColor= "white"}: { href?: string,text:string,textColor?:string }) {
+
   return (
     <Link 
       href={href} 

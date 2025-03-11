@@ -18,7 +18,7 @@ export default function AnimationText({ heading, paragraph }: AnimationTextProps
         const rect = headingRef.current.getBoundingClientRect();
         const viewportHeight = window.innerHeight;
         const topPercentage = (rect.top / viewportHeight) * 100;
-        if (topPercentage < 70 && topPercentage > 32) {
+        if (topPercentage < 68 && topPercentage > 32) {
             setInView(true);
         } else {
           setInView(false);
