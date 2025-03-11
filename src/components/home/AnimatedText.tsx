@@ -1,5 +1,5 @@
 "use client"
-import React, { useRef, useState } from "react"
+import React, { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 interface AnimationTextProps {
   heading: { heading1: string; heading2: string }
@@ -10,10 +10,7 @@ interface AnimationTextProps {
 
 export default function AnimatedText({ heading, paragraph, animate, onViewChange }: AnimationTextProps) {
   const ref = useRef(null)
-  const [color, setColor] = useState<boolean>(false)
   const view = useInView(ref, { once: false, margin: "-0% 0% -66% 0%" })
-
-  // Call the onViewChange callback when view changes
   React.useEffect(() => {
     if (onViewChange) {
       if (view) {

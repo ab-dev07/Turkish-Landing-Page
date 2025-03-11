@@ -17,7 +17,7 @@ interface DayEvents {
 
 interface TimingSectionProps {
   date: string
-  events?: Event[] // Making this optional since we'll now use eventsPerDay
+  events?: Event[] 
   eventsPerDay?: DayEvents
   selectedDay?: number
   onDaySelect?: (day: number) => void
@@ -25,22 +25,18 @@ interface TimingSectionProps {
 }
 
 const TimingSection: React.FC<TimingSectionProps> = ({
-  date,
   events = [],
   eventsPerDay = {},
   selectedDay = 1,
   onDaySelect = () => {},
   activeSection = "panama",
 }) => {
-  // Initialize with either the provided events for the selected day or the general events array
   const [currentEvents, setCurrentEvents] = useState<Event[]>(eventsPerDay[selectedDay] || events || [])
 
   useEffect(() => {
-    // Update the events when the selected day changes or active section changes
     if (eventsPerDay && Object.keys(eventsPerDay).length > 0) {
       setCurrentEvents(eventsPerDay[selectedDay] || [])
     } else {
-      // If no day-specific events are provided, use the general events array
       setCurrentEvents(events)
     }
   }, [selectedDay, eventsPerDay, events, activeSection])
