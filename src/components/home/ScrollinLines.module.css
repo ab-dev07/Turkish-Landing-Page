@@ -29,7 +29,7 @@
       animation: moveDesktop 30s linear infinite;
   }
   .scrollingLinesReverse {
-    animation: moveDesktop 30s linear infinite;
+    animation: moveDesktopReverse 30s linear infinite;
   }
   @keyframes moveDesktop {
       0% {
