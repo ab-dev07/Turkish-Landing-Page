@@ -4,7 +4,7 @@ export default function Organizers({ className = "" }) {
     const marqueeOrganizers = organizers.concat(organizers).concat(organizers).concat(organizers).concat(organizers).concat(organizers).concat(organizers)
 
     return (
-        <section className={`overflow-hidden shadow-2xl bg-white py-3 ${className}`}>
+        <section className={`overflow-hidden shadow-2xl bg-white py-3 my-40 ${className}`}>
             <div className="flex flex-nowrap marquee w-max">
                 {
                     marqueeOrganizers.map((organizer, index) => (

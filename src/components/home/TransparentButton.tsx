@@ -7,7 +7,7 @@ export default function TransparentButton({ href = "/",text ,textColor= "white"}
   return (
     <Link 
       href={href} 
-      className={`group flex items-center justify-between gap-4 border-2 border-[#ED1E24] hover:text-white hover:bg-[#ED1E24] text-${textColor} pl-6 pr-1 py-1 rounded-full transition`}
+      className={`group flex items-center justify-between gap-4 border-1 border-[#ED1E24] hover:text-white hover:bg-[#ED1E24] text-${textColor} pl-6 pr-1 py-1 rounded-full transition`}
     >
       {text}
       <CircleArrow/>

@@ -52,7 +52,7 @@ const TimingSection: React.FC<TimingSectionProps> = ({
           <button
             key={day}
             onClick={() => handleDaySelect(day)}
-            className={`py-2 px-4 rounded-xl text-center ${
+            className={`py-2 px-4 rounded-xl text-center cursor-pointer ${
               selectedDay === day ? "bg-red-600 text-white" : "bg-slate-100 text-black"
             }`}
           >
