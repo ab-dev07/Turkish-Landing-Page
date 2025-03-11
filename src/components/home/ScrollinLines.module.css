@@ -24,20 +24,27 @@
   }
 }
 
-/* ✅ Apply different animations based on screen width */
 @media (max-width: 1024px) {
   .scrollingLines {
-      animation: moveDesktop 2s linear infinite;
+      animation: moveDesktop 30s linear infinite;
   }
   .scrollingLinesReverse {
     animation: moveDesktop 30s linear infinite;
   }
   @keyframes moveDesktop {
       0% {
-          /* transform: translateX(0%); */
+          transform: translateX(0%);
       }
       100% {
-          /* transform: translateX(-20%); */
+          transform: translateX(-20%);
       }
   }
+  @keyframes moveDesktopReverse {
+    0% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
 }

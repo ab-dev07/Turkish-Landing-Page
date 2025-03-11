@@ -12,9 +12,7 @@ const MissionSection = () => {
             WHAT IS TURKISH WEEK?
           </div>
           <AnimatedText heading={{heading1:'MISSION',heading2:'VISION'}} paragraph=' from anatolia to istanbul&quot; featuring works by renowned turkish photographers exhibition hall, national theater complex free admission'/>
-       
-          {/* <AnimationText heading='MISSION' paragraph=' from anatolia to istanbul&quot; featuring works by renowned turkish photographers exhibition hall, national theater complex free admission'/> */}
-          
+      
         </div>
         <div className="relative">
           <div className="rounded-3xl   relative">

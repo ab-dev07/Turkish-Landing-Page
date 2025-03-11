@@ -20,8 +20,6 @@ interface DayEvents {
 const EventsPage: React.FC = () => {
   const [selectedDay, setSelectedDay] = useState<number>(1)
   const [activeSection, setActiveSection] = useState<string>("panama")
-
-  // Events for Panama
   const panamaEventsPerDay: DayEvents = {
     1: [
       {
@@ -137,7 +135,6 @@ const EventsPage: React.FC = () => {
     ],
   }
 
-  // Events for Costa Rica
   const costaRicaEventsPerDay: DayEvents = {
     1: [
       {
