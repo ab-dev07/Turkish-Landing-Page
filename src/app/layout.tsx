@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${inter.variable} ${geist.variable} antialiased`}
+        className={`${poppins.variable} ${inter.variable} ${geist.variable} antialiased overflow-x-hidden`}
       >
         <main>
           {children}
